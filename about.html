@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <!--Bootstrap CBN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	
+      <!---font awesome cdn--->
+    <script src="https://kit.fontawesome.com/76f12771d3.js" crossorigin="anonymous"></script>
+
+     <!--icons link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css2/header.css">
+
+    <link rel="stylesheet" href="./css2/model.css">
+    
+    
+
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            background-color: #45ccba;
+        }
+        header a{
+            color: white;
+        }
+        
+        
+        .comot{
+            clear: both;
+        }
+
+        
+/*navigation menu*/
+.container{
+    width: 100%;
+    height: 100px;
+    font-family: sans-serif;
+	
+}
+.nav-wrapper{
+    display:flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #f1f4f9;
+}
+
+.left-side{
+    display: flex;
+    
+}
+
+.nav-wrapper .left-side div{
+    margin-right: 5px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.nav-link-wrapper{
+    height: 35px;
+	color: black;
+	width: auto;
+	border:1px solid transparent;
+	text-align: center;
+    transition: border-bottom 0.5s;
+    margin-left: 20px;
+}
+
+.nav-link-wrapper a{
+    color: black;
+    text-decoration: none;
+	transition: color .5s;
+    opacity: 0.7;
+    
+}
+.nav-link-wrapper:hover{
+border-bottom: 1px solid black;
+
+}
+.nav-link-wrapper a:hover{
+	color: black;
+	opacity: 1;
+}
+.active-nav-link{
+    border-bottom: 1px solid black;
+}
+.active-nav-link a{
+    color: black !important;
+}
+.img-container{
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    margin-top: 3%;
+    background-color: #f1f4f9;
+    justify-content: space-between;
+    box-shadow: 0px 16px 8px 0px rgba(0,0,0,0.4);
+}
+
+.text{
+    width: 100%;
+    height: auto;
+         
+    float: left;
+}
+.text h4{
+    text-align: center;
+    
+}
+.text h6{
+    text-align: center;
+}
+ img{
+    float: left;
+}
+.footer-container{
+    display: flex;
+    margin-top: 6%;
+    background-color: #45ccba;
+    height: 80px;
+}
+
+.icons{
+	margin: auto;
+    font-size:21px;
+    
+    display: flex;
+}
+.fa {
+	padding: 7px;
+	font-size: 28px;
+	width: 50px;
+	height:45px;
+	border-radius: 5px;
+	text-decoration: none;
+	text-align: center;
+	margin: 5px 2px;
+	float: left;
+}
+  
+.fa-facebook {
+	background-color:white;
+	color: #45ccb8;
+}
+  
+.fa-twitter {
+	background-color: white;
+	color: #45ccb8;
+}
+.fa-youtube {
+	background-color: white;
+	color: #45ccb8;
+}
+  
+.fa-instagram {
+	background-color: white;
+	color: #45ccb8;
+}
+.fa-yahoo {
+	background-color: white;
+	color: #45ccb8;
+}
+/* Tablet Landscape */
+@media screen and (max-width: 990px) {
+
+    .nav-wrapper .left-side div{
+        margin-right: 5px;
+        font-size: 0.9em;
+        text-transform: uppercase;
+    }
+    .nav-link-wrapper{
+        height: 35px;
+        width: auto;
+        border:1px solid transparent;
+        text-align: center;
+        transition: border-bottom 0.5s;
+        margin-left: 0px;
+        
+    }
+
+    .nav-link-wrapper a{
+        color: #8a8a8a;
+        text-decoration: none;
+        transition: color .5s;
+        opacity: 1;
+        float: left;
+        
+    }
+    .nav-link-wrapper:hover{
+    border-bottom: 1px solid white;
+    }
+    .nav-link-wrapper a:hover{
+    color: black;
+
+    }
+    .nav-wrapper button{
+        width: 50px;
+    }
+
+
+}
+@media screen and (max-width:675px){
+        .img-container{
+            grid-template-columns: 1fr;
+        }  
+        
+    .text h4{
+    text-align: center;
+    margin-top: 5%;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="online">
+        <a href="index.html">JUST˚SPEND IT</a>
+   </div>
+        <div class="place">
+            <a href="./sign-in.html">
+                <div class="sign">SIGN-IN</div>
+            </a>
+            
+            <button id="myBtn" >CREATE ACCOUNT</button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">x</span>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="content-top">CREATE-ACCOUNT</div>
+                <form action="">
+                <div class="content-form">
+                    <div class="form-box">
+                        
+                        <div class="col-1">
+                           
+                                <input class="effect-1" type="text" placeholder="FIRSTNAME" maxlength="10" required>
+                                <span class="focus-border"></span>
+                            
+                        </div>
+    
+                        <div class="col-2">
+                            
+                                <input class="effect-1" type="text" placeholder="LASTNAME" maxlength="8" required>
+                                <span class="focus-border"></span>
+                            
+                        </div>
+                    </div>
+                    <div class="comot"></div>
+                    <div>
+                        <div class="col-3">
+                            <input type="email" name="" id="" class="effect-3" placeholder="EMAIL" maxlength="25" required>
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+    
+                    <div class="comot"></div>
+    
+                    <div>
+                        <div class="col-3">
+                            <input type="password" name="" id="" class="effect-3" placeholder="PASSWORD" maxlength="15" required>
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+    
+                    <div class="comot"></div>
+    
+                    <div>
+                        <div class="col-3">
+                            <input type="number" name="" id="" class="effect-3" placeholder="PHONE NUMBER" min="1" maxlength="11" required>
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="comot"></div>
+    
+                    <div class="accept">
+                       
+                            <input type="checkbox" name="" id="" required>
+                       
+                        <p style="margin-left: 4%;">Accept Term & Conditions</p>
+                    </div>
+    
+                    <div class="comot"></div>
+    
+                    <div >
+                        
+                            <input type="submit" value="SUBMIT" class="submit">
+                        
+                        
+                    </div>
+                    
+                </div>
+                </form>
+            </div>
+    
+            </div>
+        </div>
+</header>
+<div class="comot"></div>
+<div class="nav-wrapper">
+	<div class="container-fluid p-0">
+		<nav class="navbar navbar-expand-lg navbar-light ">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon" style="margin-left: -6%;"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav" >
+				
+					<li>
+						<div class="nav-link-wrapper  " >
+							<a class="nav-link" href="index.html" >HOME</a>
+						</div>
+					</li>
+					
+					<li class="nav-item">
+						<div class="nav-link-wrapper ">
+							<a class="nav-link" href="#">FEATURES</a>
+						</div>
+					</li>
+				   
+					<li class="nav-item">
+						<div class="nav-link-wrapper ">
+							<a  class="nav-link" href="collection.html">COLLECTION</a>
+						</div>
+					</li>     
+					
+					<li class="nav-item"> 
+						<div class="nav-link-wrapper ">
+							<a class="nav-link" href="#">SHOP</a>
+						</div>
+					</li>
+					
+					<li class="nav-item">
+						<div class="nav-link-wrapper active-nav-link">
+							<a class="nav-link" href="about.html">About</a>
+						</div>
+					</li>
+					
+					
+				
+			  </ul>
+			</div>
+		  </nav>
+    </div>
+    <div class="comot"></div>
+</div>
+<div class="img-container">
+    <img src="./image/lady.jpg" alt="" width="100%" height="700px" >
+    <div class="text">
+
+        <h4>ABOUT ME..NOT BASICALLY ME YOU GET THE DRIFT</h4>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor sapiente impedit inventore molestias odio voluptatum id veritatis expedita, dolorum officia odit voluptatibus sunt, perferendis, quae reiciendis at neque perspiciatis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, vel voluptatum. Aliquam rem voluptates debitis aut voluptatibus, repudiandae nulla quod iusto, corrupti doloribus cumque soluta qui? Soluta praesentium cupiditate ut?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est dolorum, minus beatae recusandae, ipsa aliquam quisquam accusantium eum totam itaque excepturi dolor ratione dolore explicabo maiores? Placeat id repellendus ratione.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis commodi assumenda ipsam corporis accusamus, totam dolore dolores odit consectetur velit repudiandae officiis. Veniam voluptates sequi praesentium hic nesciunt consequuntur autem!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda quod quo modi veritatis autem voluptate nesciunt, ratione natus nihil hic doloremque et placeat exercitationem dignissimos ipsum sed suscipit cumque neque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum natus odit possimus tempore, commodi animi voluptatum asperiores nobis quis vel delectus excepturi numquam exercitationem eius. Architecto perferendis molestiae dolores assumenda.
+
+                                                THANKS FOR VIEW..LMAO NA M NOT <H6>STAY SAFE</H6>
+    </div>
+</div>
+<div class="comot"></div>
+<footer class="footer-container"> 
+    <div class="icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-yahoo"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </div>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/model.js"></script>
+</html>
