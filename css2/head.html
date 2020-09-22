@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./model.css">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            width: 100%;
+            height: 90px;
+            background-color: red;
+            text-align: center;
+            justify-content: space-between;
+            display: flex;
+            
+        }
+        .online{
+            width: 100px;
+            margin: auto;
+            
+            height: 70px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35px;
+            margin-left: 0, auto, 0, 40%;
+            background-color: red;
+            float: left;
+        }
+        .sign-in{
+            width: auto;
+            height: 90px;
+           
+            background-color: blue;
+            float: left;
+        }
+        .create{
+            width: auto;
+            padding: 0;
+            height: 90px;
+            margin: 0;
+            background-color: pink;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="online">ONLINE</div>
+        <div>
+            <div class="sign-in">
+                <a href="/sign-in.html" ><p>SIGN-IN</p></a>
+            </div>
+            <div class="create">
+                <div>
+                    <!-- Trigger/Open The Modal -->
+                <button id="myBtn">CREATE ACCOUNT</button>
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">x</span>
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="content-top">CREATE-ACCOUNT</div>
+    
+                    <div class="content-form">
+                        <div class="form-box">
+                            <div class="col-1">
+                                <form action="">
+                                    <input class="effect-1" type="text" placeholder="FIRSTNAME" maxlength="10" required>
+                                    <span class="focus-border"></span>
+                                </form>
+                            </div>
+    
+                            <div class="col-2">
+                                <form action="">
+                                    <input class="effect-1" type="text" placeholder="LASTNAME" maxlength="8" required>
+                                    <span class="focus-border"></span>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="comot"></div>
+                        <div>
+                            <div class="col-3">
+                                <input type="email" name="" id="" class="effect-3" placeholder="EMAIL" maxlength="25" required>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+    
+                        <div class="comot"></div>
+    
+                        <div>
+                            <div class="col-3">
+                                <input type="password" name="" id="" class="effect-3" placeholder="PASSWORD" maxlength="15" required>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+    
+                        <div class="comot"></div>
+    
+                        <div>
+                            <div class="col-3">
+                                <input type="number" name="" id="" class="effect-3" placeholder="PHONE NUMBER" min="1" maxlength="11" required>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="comot"></div>
+    
+                        <div style="display: flex; margin-top: 5%; margin-left: 23%;">
+                            <form action="">
+                                <input type="checkbox" name="" id="" required>
+                            </form>
+                            <p style="margin-left: 4%;">Accept Term & Conditions</p>
+                        </div>
+    
+                        <div class="comot"></div>
+    
+                        <div>
+                            <form action="">
+                                <input type="submit" value="SUBMIT" class="submit">
+                            </form>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                </div>
+                </div>
+        </div>
+        
+        </div>
+    </header>
+</body>
+</html>

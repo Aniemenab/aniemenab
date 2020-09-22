@@ -1,0 +1,754 @@
+/* The Modal (background) */
+.modal {
+    display: none ;/* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  
+}
+
+#myBtn{
+    background-color: #45ccb8;
+    color: white;
+    border: none;
+    outline: none;
+    
+    
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px; top: 0;}
+
+
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 35%;
+    height: 550px;
+    top: -100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.4s
+}
+/*sign-in style*/
+.content-top{
+    width: 100%;
+	height: 90px;
+	padding: 30px 0px 0px 0px;
+    background-color: #45ccb8;
+	font-size: 30px;
+	color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+	
+}
+.content-form{
+    width: 100%;
+	height: 300px;
+}
+.content-form p{
+    color: black;
+}
+:focus{outline:none;}
+.col-1 input{
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: #333;
+	width: 1500%;
+	letter-spacing: 1px;
+	
+}
+.col-2 input{
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: #333;
+	width: 1500%;
+	letter-spacing: 1px;
+	
+}
+.col-1{
+	width:3%;
+	margin-top: 20px;
+	margin-left: 5%;
+	position: relative;
+	padding: 0px;
+	float:left;
+} 
+
+.col-2{
+	width:3%;
+	margin-top: 20px;
+	margin-left: 45%;
+	position: relative;
+	padding: 0px;
+	float:left;
+} 
+
+.col-3{
+	width:3%;
+	margin-top: 20px;
+	margin-left: 5%;
+	position: relative;
+	padding: 0px;
+	float:left;
+} 
+
+.col-4{
+	width:100%;
+	margin-top: 8%;
+	margin-left: 5%;
+	position: relative;
+	padding: 0px;
+	float:left;
+} 
+.col-3 input{
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: #333;
+	width: 2700%;
+	letter-spacing: 1px;
+	
+}
+
+.effect-1{
+	border: 0;
+	padding: 7px 0; 
+	border-bottom: 1px solid #ccc;
+}
+.effect-2{
+	border: 0;
+	padding: 7px 0; 
+	border-bottom: 1px solid #ccc;
+}
+.effect-3{
+	border: 0;
+	padding: 7px 0; 
+	border-bottom: 1px solid #ccc;
+}
+.effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 160px; height: 2px; z-index: 99;}
+.effect-1 ~ .focus-border:before, 
+.effect-1 ~ .focus-border:after{content: ""; position: absolute; bottom: 0; left: 0; width: 0; height: 100%; background-color: #3399FF; transition: 0.4s;}
+.effect-1 ~ .focus-border:after{left: auto; right: 0;}
+.effect-1:focus ~ .focus-border:before, 
+.effect-1:focus ~ .focus-border:after{width: 100%; transition: 0.4s; }
+
+
+.effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 300px; height: 2px; z-index: 99;}
+.effect-3 ~ .focus-border:before, 
+.effect-3 ~ .focus-border:after{content: ""; position: absolute; bottom: 0; left: 0; width: 0; height: 100%; background-color: #3399FF; transition: 0.4s;}
+.effect-3 ~ .focus-border:after{left: auto; right: 0;}
+.effect-3:focus ~ .focus-border:before, 
+.effect-3:focus ~ .focus-border:after{width: 100%; transition: 0.4s; }
+
+.accept{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 23%;
+}
+.submit{
+	margin-left:26%;
+	margin-top: 2%;
+	width: 200px;
+	height: 35px;
+	border-radius: 10px;
+	border: none;
+	float: left;
+	background: -webkit-linear-gradient(left, rgba(195, 239, 232),  rgba(75, 206, 186,0.7));
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+@media screen and (MAx-width:1066px){
+    
+    .accept{
+        
+        margin-top: 15%;
+    
+    }
+    
+    .submit{
+        margin-left:22%;
+        margin-top: 2%;
+        width: 200px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        float: left;
+        background: -webkit-linear-gradient(left, rgba(195, 239, 232),  rgba(75, 206, 186,0.7));
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+}
+
+@media screen and (max-width: 990px) {
+    
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 150px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 300px; height: 2px; z-index: 99;}
+
+    .accept{
+        display: flex;
+        margin-top: 5%;
+        margin-left: 23%;
+    }
+    .submit{
+        margin-left:24%;
+        margin-top: 2%;
+        width: 180px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        float: left;
+        background: -webkit-linear-gradient(left, rgba(195, 239, 232),  rgba(75, 206, 186,0.7));
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 150px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 300px; height: 2px; z-index: 99;}
+    .content-top{
+        width: 100%;
+        height: 90px;
+        padding: 30px 0px 0px 0px;
+        background-color: #45ccb8;
+        font-size: 28px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        
+    }
+    .submit{
+        margin-left:20%;
+        margin-top: 2%;
+        width: 200px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        float: left;
+        background: -webkit-linear-gradient(left, rgba(195, 239, 232),  rgba(75, 206, 186,0.7));
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+}
+
+@media screen and (max-width:813px){
+    
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 130px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 240px; height: 2px; z-index: 99;}
+    .accept{
+        
+        margin-left: 19%;
+    }
+    .submit{
+        margin-left:18%;
+        margin-top: 2%;
+        width: 170px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        float: left;
+        background: -webkit-linear-gradient(left, rgba(195, 239, 232),  rgba(75, 206, 186,0.7));
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 150px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 270px; height: 2px; z-index: 99;}
+    .content-top{
+        width: 100%;
+        height: 90px;
+        padding: 30px 0px 0px 0px;
+        background-color: #45ccb8;
+        font-size: 25px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        
+    }
+
+    /*footer*/
+    
+    .input{
+        width: 250px;
+        height: 35px;
+        float: left;
+        border-radius: 5px 0px 0px 5px;
+        border: none;
+        
+        
+    }
+    .button{
+        width:80px;
+        height:35px;
+        float: left;
+        background-color: #45ccb8;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        text-align: center;
+        border: 1px solid white;
+    }
+
+    .submit{
+        margin-left:20%;
+        margin-top: 2%;
+        width: 200px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        float: left;
+        background: -webkit-linear-gradient(left, rgba(195, 239, 232),  rgba(75, 206, 186,0.7));
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+}
+
+
+@media screen and (max-width:736px){
+    
+    .content-top{
+        width: 100%;
+        height: 60px;
+        padding: 12px 0px 0px 0px;
+        background-color: #45ccb8;
+        font-size: 20px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        
+    }
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 140px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 250px; height: 2px; z-index: 99;}
+    
+    .submit{
+        margin-left:25%;
+        margin-top: 2%;
+        width: 170px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        float: left;
+        background: -webkit-linear-gradient(left, rgba(195, 239, 232),  rgba(75, 206, 186,0.7));
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+}
+
+@media screen and (max-width:675px){
+    
+
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 130px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 240px; height: 2px; z-index: 99;}
+    .accept{
+        
+        margin-left: 13%;
+    }
+    .submit{
+        margin-left:17%;
+        margin-top: 2%;
+        width: 170px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        float: left;
+        background: -webkit-linear-gradient(left, rgba(195, 239, 232),  rgba(75, 206, 186,0.7));
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+}
+@media screen and (max-width:645px){
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 120px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 220px; height: 2px; z-index: 99;}
+}
+@media screen and (max-width:600px){
+    
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 130px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 240px; height: 2px; z-index: 99;}
+
+    .submit{
+        margin-left:17%;
+        margin-top: 2%;
+        width: 180px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        float: left;
+        background: -webkit-linear-gradient(left, rgba(195, 239, 232),  rgba(97, 161, 152, 0.7));
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+}
+    
+    
+
+
+@media screen and (max-width:550px){
+    
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 120px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 210px; height: 2px; z-index: 99;}
+
+    .accept{
+        font-size: 15px;
+        margin-left: 19%;
+    }
+}
+@media  screen and (max-width: 480px)  {
+    
+    
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 110px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 200px; height: 2px; z-index: 99;}
+    #myBtn{
+    background-color: #45ccb8;
+    color: white;
+    border: none;
+    outline: none;
+    }
+   
+    .accept p{
+        font-size: 14px;
+        
+    }
+    .submit{
+        margin-left:22%;
+        margin-top: 2%;
+        width: 150px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        float: left;
+        background: -webkit-linear-gradient(left, rgba(195, 239, 232),  rgba(75, 206, 186,0.7));
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+}
+
+@media screen and (max-width:414px){
+    
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 100px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 200px; height: 2px; z-index: 99;}
+    .content-form p{
+        font-size: 12px;
+        ;
+    }
+    .submit{
+        margin-left:18%;
+        margin-top: 2%;
+        width: 150px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        float: left;
+        background: -webkit-linear-gradient(left, rgba(195, 239, 232),  rgba(75, 206, 186,0.7));
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+}
+
+@media screen and (max-width:360px){
+    
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 95px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 170px; height: 2px; z-index: 99;}
+    
+    .submit{
+        margin-left:18%;
+    }
+    input[placeholder]{
+        font-size: 11px;
+    }
+    .accept{
+        background-color: red   ;
+    }
+}
+@media screen and (max-width:328px){
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 91px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 160px; height: 2px; z-index: 99;}
+}
+
+@media screen and (max-width:320px){
+
+    
+    .accept{
+        display: flex;
+        background-color: red;
+        height: 50px;
+    }
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 85px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 150px; height: 2px; z-index: 99;}
+    .submit{
+        margin-left:22%;
+        margin-top: 2%;
+        width: 100px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        float: left;
+        background: -webkit-linear-gradient(left, rgba(195, 239, 232),  rgba(75, 206, 186,0.7));
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    input[placeholder]{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:291px){
+    .content-top{
+        font-size:18px;
+    }
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 80px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 140px; height: 2px; z-index: 99;}
+}
+
+@media screen and (max-width:280px){
+    .submit{
+        margin-left: 35px;
+        width: 95px;
+    }
+
+   .accept p{
+       display: flex;
+       margin-top: 5%;
+       font-size: 10px;
+   }
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 77px; height: 2px; z-index: 99;}
+    
+    .effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 133px; height: 2px; z-index: 99;}
+}
+@keyframes animatetop{
+    from{
+        top: -200px;
+    }
+    to {
+        top: -100px;
+    }
+
+}
+@media screen and (max-width:1020px){
+    .modal-content {
+        position: relative;
+        background-color: white;
+        border: 1px solid #888;
+        width: 37%;
+        height: 550px;
+        top: -100px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.4s
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .modal-content {
+        position: relative;
+        background-color: white;
+        border: 1px solid #888;
+        width: 40%;
+        height: 500px;
+        top: -60px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.4s
+    }
+
+    @keyframes animatetop{
+        from{
+            top: -200px;
+        }
+        to {
+            top: -60px;
+        }
+    
+    }
+}
+
+@media screen and (max-width:812px){
+    .modal-content {
+        position: relative;
+        background-color: white;
+        border: 1px solid #888;
+        width: 37%;
+        height: 500px;
+        top: -40px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.4s
+    }
+
+    @keyframes animatetop{
+        from{
+            top: -200px;
+        }
+        to {
+            top: -60px;
+        }
+    
+    }
+}
+
+@media screen and (max-width:768px){
+    .modal-content {
+        position: relative;
+        background-color: white;
+        border: 1px solid #888;
+        width: 45%;
+        height: 500px;
+        top: -40px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.4s
+    }
+
+    @keyframes animatetop{
+        from{
+            top: -200px;
+        }
+        to {
+            top: -60px;
+        }
+    
+    }
+
+    @keyframes animatetop{
+        from{
+            top: -200px;
+        }
+        to {
+            top: -60px;
+        }
+    
+    }
+}
+
+@media screen and (max-width:736px){
+    .modal-content {
+        position: relative;
+        background-color: white;
+        border: 1px solid #888;
+        width: 45%;
+        height: 450px;
+        top: -40px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.4s
+    }
+
+    @keyframes animatetop{
+        from{
+            top: -200px;
+        }
+        to {
+            top: -60px;
+        }
+    
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .modal-content {
+        position: relative;
+        background-color: white;
+        border: 1px solid #888;
+        width: 53%;
+        height: 470px;
+        top: -40px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.4s
+    }
+
+    @keyframes animatetop{
+        from{
+            top: -200px;
+        }
+        to {
+            top: -60px;
+        }
+    
+    }
+}
+
+@media screen and (max-width:480px){
+    .modal-content {
+        position: relative;
+        background-color: white;
+        border: 1px solid #888;
+        width: 60%;
+        height: 450px;
+        top: -40px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.4s
+    }
+
+    @keyframes animatetop{
+        from{
+            top: -200px;
+        }
+        to {
+            top: -60px;
+        }
+    
+    }
+}
